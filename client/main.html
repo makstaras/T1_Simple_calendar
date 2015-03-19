@@ -1,0 +1,35 @@
+<head>
+    <title>My first project on meteor</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Simple project</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Calendar<span class="sr-only">(current)</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mainContent">
+        <div class="row">
+            <p>
+               	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Calendar</button>
+               	{{>main}}
+            </p>
+        </div>
+    </div>
+</body>
+
+<template name="main">
+	<div id="calendar">
+	</div>
+</template>
